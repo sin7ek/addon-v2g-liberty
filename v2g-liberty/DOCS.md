@@ -80,12 +80,13 @@ If you've upgraded from an earlier version of V2G Liberty (also with the manual 
    - If there is a section `default_config` already, leave it unchanged.
 
    Don't forget to save your changes.
-
-3. Now restart Home Assistant by going to `settings > system` and in the top
+3. Download v2g_package from [Git](https://github.com/V2G-liberty/addon-v2g-liberty/releases/). Upload the v2g_package directory to config/packages/.
+4. Check for configuration errors in Developer tools > Check configuration. Found errors? Fix them! None found? Next step.
+5. Now restart Home Assistant by going to `settings > system` and in the top
    right click the top right ⏼ menu and select `Restart Home Assistant`.
-4. When the restart finished the _V2G&nbsp;Liberty_ menu item in the left menu should be visible, open this by clicking it.
-5. Now go to the settings tab (⚙ icon in the blue top-bar)
-6. Review all sections of the page and complete the requested information as necessary.<br/>
+6. When the restart finished the _V2G&nbsp;Liberty_ menu item in the left menu should be visible, open this by clicking it.
+7. Now go to the settings tab (⚙ icon in the blue top-bar)
+8. Review all sections of the page and complete the requested information as necessary.<br/>
    Unfortunately for upgrading users from the "Manual installation version", the settings are not automatically copied from the secrets file. But you can copy-paste them here. This is a one-time-only action. With future updates all settings remain un-touched.
 
 ## Load balancing
