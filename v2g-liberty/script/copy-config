@@ -5,8 +5,21 @@ set -e
 
 cd "$(dirname "$0")/../.."
 
-mkdir -p .devcontainer/config/{packages,www}
+# Ensure directory structure
+mkdir -p .devcontainer/config/{packages,www,templates}
 
-cp -avR v2g-liberty/rootfs/root/homeassistant/packages/* .devcontainer/config/packages/
-cp -avR v2g-liberty/rootfs/root/homeassistant/www/* .devcontainer/config/www/
-cp -av  v2g-liberty/rootfs/root/homeassistant/v2g_liberty_example_configuration.yaml .devcontainer/config/configuration.yaml
+# Copy package files
+cp -avR v2g-liberty/rootfs/root/homeassistant/packages/* \
+    .devcontainer/config/packages/
+
+# Copy www assets
+cp -avR v2g-liberty/rootfs/root/homeassistant/www/* \
+    .devcontainer/config/www/
+
+# Copy example configuration
+cp -av v2g-liberty/rootfs/root/homeassistant/v2g_liberty_example_configuration.yaml \
+    .devcontainer/config/configuration.yaml
+
+# Copy modern template sensors
+cp -av v2g-liberty/rootfs/root/homeassistant/v2g_liberty_sensors.yaml \
+    .devcontainer/config/templates/
