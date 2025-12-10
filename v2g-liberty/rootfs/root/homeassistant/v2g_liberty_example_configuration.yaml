@@ -5,6 +5,7 @@ homeassistant:
 # Loads default set of integrations. Do not remove.
 default_config:
 
+template: !include_dir_merge_list templates/
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
