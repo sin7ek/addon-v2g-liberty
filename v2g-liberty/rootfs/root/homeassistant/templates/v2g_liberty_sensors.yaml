@@ -4,7 +4,7 @@
 
 - binary_sensor:
     - name: is_charge_power_different_from_schedule
-      unique_id: v2g_is_charge_power_different_from_schedule
+      unique_id: is_charge_power_different_from_schedule
       device_class: problem
       state: >
         {{
@@ -20,145 +20,145 @@
 - sensor:
 
     - name: "Quasar loadbalancer limit"
-      unique_id: v2g_quasar_loadbalancer_limit
+      unique_id: quasar_loadbalancer_limit
       device_class: power
       unit_of_measurement: W
       state: ""
 
     - name: "Car state of charge"
-      unique_id: v2g_car_state_of_charge
+      unique_id: car_state_of_charge
       device_class: battery
       unit_of_measurement: "%"
       state: ""
 
     - name: "Charger real charging power"
-      unique_id: v2g_charger_real_charging_power
+      unique_id: charger_real_charging_power
       device_class: power
       unit_of_measurement: W
       state: ""
 
     - name: "Current scheduled charging power"
-      unique_id: v2g_current_scheduled_charging_power
+      unique_id: current_scheduled_charging_power
       device_class: power
       unit_of_measurement: W
       state: ""
 
     - name: "Car Remaining Range"
-      unique_id: v2g_car_remaining_range
+      unique_id: car_remaining_range
       device_class: distance
       unit_of_measurement: km
       state: ""
 
     - name: "Total charging costs last 7 days"
-      unique_id: v2g_total_charging_cost_last_7_days
+      unique_id: total_charging_cost_last_7_days
       device_class: monetary
       unit_of_measurement: "€"
       state: ""
 
     - name: "Total charged energy last 7 days"
-      unique_id: v2g_total_charged_energy_last_7_days
+      unique_id: total_charged_energy_last_7_days
       device_class: energy_storage
       unit_of_measurement: kWh
       state: ""
 
     - name: "Total discharged energy last 7 days"
-      unique_id: v2g_total_discharged_energy_last_7_days
+      unique_id: total_discharged_energy_last_7_days
       device_class: energy_storage
       unit_of_measurement: kWh
       state: ""
 
     - name: "Total net energy last 7 days"
-      unique_id: v2g_net_energy_last_7_days
+      unique_id: net_energy_last_7_days
       device_class: energy_storage
       unit_of_measurement: kWh
       state: ""
 
     - name: "Total saved emissions last 7 days"
-      unique_id: v2g_total_saved_emissions_last_7_days
+      unique_id: total_saved_emissions_last_7_days
       device_class: weight
       unit_of_measurement: kg
       state: ""
 
     - name: "Total emissions last 7 days"
-      unique_id: v2g_total_emissions_last_7_days
+      unique_id: total_emissions_last_7_days
       device_class: weight
       unit_of_measurement: kg
       state: ""
 
     - name: "Net emissions last 7 days"
-      unique_id: v2g_net_emissions_last_7_days
+      unique_id: net_emissions_last_7_days
       device_class: weight
       unit_of_measurement: kg
       state: ""
 
     - name: "Total discharge time in last 7 days"
-      unique_id: v2g_total_discharge_time_last_7_days
+      unique_id: total_discharge_time_last_7_days
       state: ""
 
     - name: "Total charge time last 7 days"
-      unique_id: v2g_total_charge_time_last_7_days
+      unique_id: total_charge_time_last_7_days
       state: ""
 
     - name: "Calendar account connection status"
-      unique_id: v2g_calendar_account_connection_status
+      unique_id: calendar_account_connection_status
       state: ""
 
     - name: "Charger state"
-      unique_id: v2g_charger_state_text
+      unique_id: charger_state_text
       state: ""
 
     - name: "Charger state int value"
-      unique_id: v2g_charger_state_int
+      unique_id: charger_state_int
       state: ""
 
     - name: "Charger connection status"
-      unique_id: v2g_charger_connection_status
+      unique_id: charger_connection_status
       state: ""
 
     - name: "This changes every time the EVSE gets polled"
-      unique_id: v2g_poll_refresh_indicator
+      unique_id: poll_refresh_indicator
       state: " "
 
     - name: "Calendar item in chart"
-      unique_id: v2g_calendar_item_in_chart
+      unique_id: calendar_item_in_chart
       state: ""
 
     - name: "Buy price chart data"
-      unique_id: v2g_consumption_prices
+      unique_id: consumption_prices
       state: ""
 
     - name: "Sell price chart data"
-      unique_id: v2g_production_prices
+      unique_id: production_prices
       state: ""
 
     - name: "Emissions chart data"
-      unique_id: v2g_co2_emissions
+      unique_id: co2_emissions
       state: ""
 
     - name: "SoC schedule chart data"
-      unique_id: v2g_soc_prognosis
+      unique_id: soc_prognosis
       state: ""
 
     - name: "SoC Boost chart data"
-      unique_id: v2g_soc_prognosis_boost
+      unique_id: soc_prognosis_boost
       state: ""
 
     - name: "SoC Max Charge Now chart data"
-      unique_id: v2g_soc_prognosis_max_charge_now
+      unique_id: soc_prognosis_max_charge_now
       state: ""
 
     - name: "Charger max available power"
-      unique_id: v2g_charger_max_available_power
+      unique_id: charger_max_available_power
       state: ""
 
     - name: "FlexMeasures connection status"
-      unique_id: v2g_fm_connection_status
+      unique_id: fm_connection_status
       state: ""
 
     - name: "Utility display name"
-      unique_id: v2g_utility_display_name
+      unique_id: utility_display_name
       state: ""
 
     - name: "When was V2G Liberty add-on last restarted"
-      unique_id: v2g_last_reboot_at
+      unique_id: last_reboot_at
       state: ""
